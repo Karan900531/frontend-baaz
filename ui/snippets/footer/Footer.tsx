@@ -17,41 +17,12 @@ const MAX_LINKS_COLUMNS = 4;
 
 const Footer = () => {
   const BLOCKSCOUT_LINKS = [
-    {
-      icon: 'social/git' as const,
-      iconSize: '18px',
-      text: 'GitHub',
-      url: 'https://github.com/8BitChain',
-    },
-    {
-      icon: 'social/tweet' as const,
-      iconSize: '18px',
-      text: 'Twitter',
-      url: 'https://x.com/8Bit_chain',
-    },
-    {
-      icon: 'social/discord' as const,
-      iconSize: '24px',
-      text: 'Discord',
-      url: 'https://discord.com/invite/D7DCEm2g',
-    },
-    {
-      icon: 'social/telega' as const,
-      iconSize: '20px',
-      text: 'Telegram',
-      url: 'https://t.me/Official_8Bitchain',
-    },
-    {
-      icon: 'contract' as const,
-      iconSize: '20px',
-      text: 'Whitepaper',
-      url: 'https://whitepaper.8bitchain.finance',
-    },
+    
     {
       icon: 'globe' as const,
       iconSize: '20px',
       text: 'Website',
-      url: 'https://8bitchain.finance',
+      url: 'https://baazscan.com',
     },
   ];
 
@@ -86,9 +57,9 @@ const Footer = () => {
   const renderProjectInfo = React.useCallback((gridArea?: GridProps['gridArea']) => {
     return (
       <Box gridArea={ gridArea }>
-        <Text mt={ 3 } fontSize="sm" fontWeight="bold">  Powered by  <Link fontSize="sm" href="https://8bitchain.finance/">8Bit Chain</Link> </Text>
+        <Text mt={ 3 } fontSize="sm" fontWeight="bold">  Powered by  <Link fontSize="sm" href="https://baazscan.com/">Baaz Chain</Link> </Text>
         <Text mt={ 3 } fontSize="xs">
-         8Bit Scan serves as a block explorer dedicated to analyzing transactions on the 8Bit Chain
+         Baaz Scan serves as a block explorer dedicated to analyzing transactions on the Baaz Chain
         </Text>
       </Box>
     );
