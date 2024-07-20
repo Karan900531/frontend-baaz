@@ -88,7 +88,7 @@ const Stats = () => {
           _last={ isOdd ? lastItemTouchStyle : undefined }
           isLoading={ isPlaceholderData }
         />
-        { hasGasTracker && data.gas_prices && (
+        {/* { hasGasTracker && data.gas_prices && (
           <StatsItem
             icon="gas"
             title="Gas tracker"
@@ -97,7 +97,7 @@ const Stats = () => {
             tooltipLabel={ gasLabel }
             isLoading={ isPlaceholderData }
           />
-        ) }
+        ) } */}
         { data.rootstock_locked_btc && (
           <StatsItem
             icon="coins/bitcoin"
