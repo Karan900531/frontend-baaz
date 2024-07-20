@@ -155,9 +155,9 @@ const ContractVerificationForm = ({ method: methodFromQuery, config, hash }: Pro
       'standard-input': <ContractVerificationStandardInput config={ config }/>,
       sourcify: <ContractVerificationSourcify/>,
       'multi-part': <ContractVerificationMultiPartFile/>,
-      // 'vyper-code': <ContractVerificationVyperContract config={ config }/>,
-      // 'vyper-multi-part': <ContractVerificationVyperMultiPartFile/>,
-      // 'vyper-standard-input': <ContractVerificationVyperStandardInput/>,
+      'vyper-code': <ContractVerificationVyperContract config={ config }/>,
+      'vyper-multi-part': <ContractVerificationVyperMultiPartFile/>,
+      'vyper-standard-input': <ContractVerificationVyperStandardInput/>,
     };
   }, [ config ]);
   const method = watch('method');
