@@ -79,7 +79,7 @@ const LatestBlocks = () => {
         { statsQueryResult.data?.network_utilization_percentage !== undefined && (
           <Skeleton isLoaded={ !statsQueryResult.isPlaceholderData } mb={{ base: 6, lg: 3 }} display="inline-block">
             <Text as="span" fontSize="sm">
-              Network utilization:{ nbsp }
+              Baaz utilization:{ nbsp }
             </Text>
             <Text as="span" fontSize="sm" color="yellow.400" fontWeight={ 700 }>
               { statsQueryResult.data?.network_utilization_percentage.toFixed(2) }%
@@ -106,7 +106,7 @@ const LatestBlocks = () => {
 
   return (
     <Box width={{ base: '100%', lg: '280px' }} flexShrink={ 0 }>
-      <Heading as="h4" size="sm" mb={ 4 }>Latest blocks</Heading>
+      <Heading as="h4" size="sm" mb={ 4 }>Baaz blocks</Heading>
       { content }
     </Box>
   );
