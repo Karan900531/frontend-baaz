@@ -99,7 +99,7 @@ const ContractVerificationFieldMethod = ({ control, isDisabled, methods }: Props
     <>
       <div>
         <chakra.span fontWeight={ 500 } fontSize="lg" fontFamily="heading">
-          Currently, 8Bit Scan supports { methods.length } contract verification methods
+          Currently, Baaz Scan supports { methods.length } contract verification methods
         </chakra.span>
         <Popover trigger="hover" isLazy placement={ isMobile ? 'bottom-end' : 'right-start' } offset={ [ -8, 8 ] }>
           <PopoverTrigger>

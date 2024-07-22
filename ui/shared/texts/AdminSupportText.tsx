@@ -9,7 +9,7 @@ const AdminSupportText = ({ className }: Props) => {
   return (
     <Box className={ className }>
       <span>Need help? Contact admin team at </span>
-      <Link href="mailto:admin@8bitchain.io">admin@8bitchain.io</Link>
+      <Link href="mailto:admin@baazscan.com">admin@baazscan.com</Link>
       <span> for assistance!</span>
     </Box>
   );
