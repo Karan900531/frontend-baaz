@@ -41,11 +41,7 @@ const AddressesTableItem = ({
           fontWeight={ 700 }
         />
       </Td>
-      <Td pl={ 10 }>
-        { item.public_tags && item.public_tags.length ? item.public_tags.map(tag => (
-          <Tag key={ tag.label } isLoading={ isLoading } isTruncated>{ tag.display_name }</Tag>
-        )) : null }
-      </Td>
+    
       <Td isNumeric>
         <Skeleton isLoaded={ !isLoading } display="inline-block">
           <Text lineHeight="24px" as="span">{ addressBalanceChunks[0] }</Text>
