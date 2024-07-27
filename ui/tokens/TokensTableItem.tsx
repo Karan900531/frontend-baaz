@@ -101,16 +101,7 @@ const TokensTableItem = ({
           </Flex>
         </Flex>
       </Td>
-      <Td isNumeric>
-        <Skeleton isLoaded={ !isLoading } fontSize="sm" lineHeight="24px" fontWeight={ 500 } display="inline-block">
-          { exchangeRate && `$${ Number(exchangeRate).toLocaleString(undefined, { minimumSignificantDigits: 4 }) }` }
-        </Skeleton>
-      </Td>
-      <Td isNumeric maxWidth="300px" width="300px">
-        <Skeleton isLoaded={ !isLoading } fontSize="sm" lineHeight="24px" fontWeight={ 500 } display="inline-block">
-          { marketCap && `$${ BigNumber(marketCap).toFormat() }` }
-        </Skeleton>
-      </Td>
+    
       <Td isNumeric>
         <Skeleton
           isLoaded={ !isLoading }

@@ -39,18 +39,8 @@ const TokensTable = ({ items, page, isLoading, sorting, setSorting }: Props) => 
       <Thead top={ 80 }>
         <Tr>
           <Th w="50%">Token</Th>
-          <Th isNumeric w="15%">
-            <Link onClick={ sort('fiat_value') } display="flex" justifyContent="end">
-              { sorting?.includes('fiat_value') && <IconSvg name="arrows/east-mini" boxSize={ 4 } transform={ sortIconTransform }/> }
-              Price
-            </Link>
-          </Th>
-          <Th isNumeric w="20%">
-            <Link onClick={ sort('circulating_market_cap') } display="flex" justifyContent="end">
-              { sorting?.includes('circulating_market_cap') && <IconSvg name="arrows/east-mini" boxSize={ 4 } transform={ sortIconTransform }/> }
-              On-chain market cap
-            </Link>
-          </Th>
+      
+     
           <Th isNumeric w="15%">
             <Link onClick={ sort('holder_count') } display="flex" justifyContent="end">
               { sorting?.includes('holder_count') && <IconSvg name="arrows/east-mini" boxSize={ 4 } transform={ sortIconTransform }/> }
