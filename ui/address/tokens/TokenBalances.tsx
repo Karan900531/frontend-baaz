@@ -46,11 +46,7 @@ const TokenBalances = () => {
 
   return (
     <Flex columnGap={ 3 } rowGap={ 3 } mt={{ base: '6px', lg: 0 }} flexDirection={{ base: 'column', lg: 'row' }}>
-      <TokenBalancesItem
-        name="Net Worth"
-        value={ addressData?.exchange_rate ? `${ prefix }$${ totalUsd.toFormat(2) } USD` : 'N/A' }
-        isLoading={ addressQuery.isPending || tokenQuery.isPending }
-      />
+   
       <TokenBalancesItem
         name={ `${ config.chain.currency.symbol } Balance` }
         value={ (!nativeUsd.eq(ZERO) ? `$${ nativeUsd.toFormat(2) } USD | ` : '') + `${ nativeValue } ${ config.chain.currency.symbol }` }
@@ -59,7 +55,7 @@ const TokenBalances = () => {
       <TokenBalancesItem
         name="Tokens"
         value={
-          `${ prefix }$${ tokensInfo.usd.toFormat(2) } USD ` +
+
           tokensNumText
         }
         isLoading={ addressQuery.isPending || tokenQuery.isPending }
